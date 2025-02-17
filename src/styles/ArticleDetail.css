@@ -1,0 +1,39 @@
+.article-notfound {
+    color: red;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  .article-detail-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .article-detail-title {
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  
+  .article-detail-image {
+    max-width: 400px;
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .article-detail-noimage {
+    font-style: italic;
+    margin-bottom: 10px;
+  }
+  
+  .article-detail-content {
+    margin-bottom: 20px;
+  }
+  
+  .article-detail-backlink {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: #007BFF;
+  }
+  

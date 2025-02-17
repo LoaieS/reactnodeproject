@@ -1,0 +1,51 @@
+.about-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .about-title {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    text-align: center;
+  }
+  
+  .about-subtitle {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
+  }
+  
+  .about-paragraph {
+    margin-bottom: 15px;
+    line-height: 1.6;
+  }
+  
+  .about-team-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 20px;
+  }
+  
+  .about-member {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 15px;
+  }
+  
+  .about-member-name {
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: bold;
+  }
+  
+  .about-member-role {
+    margin: 5px 0;
+    font-style: italic;
+  }
+  
+  .about-member-bio {
+    margin: 5px 0;
+  }
+  
