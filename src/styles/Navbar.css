@@ -1,14 +1,15 @@
 .navbar {
     display: flex;
     justify-content: space-between;
-    background-color: #222;
-    padding: 10px;
+    align-items: center;
+    background-color: #222; /* Dark background */
+    padding: 15px 20px;
   }
   
   .navbar-logo {
     color: #fff;
-    font-weight: bold;
-    font-size: 1.2rem;
+    font-weight: 600;
+    font-size: 1.5rem;
   }
   
   .navbar-links {
@@ -19,5 +20,11 @@
   .navbar-link {
     color: #fff;
     text-decoration: none;
+    transition: color 0.2s ease;
+    font-weight: 500;
+  }
+  
+  .navbar-link:hover {
+    color: #ccc;
   }
   

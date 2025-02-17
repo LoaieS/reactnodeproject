@@ -1,19 +1,24 @@
 .home-container {
-    padding: 20px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .home-title {
+    margin-bottom: 10px;
+    font-size: 2rem;
+    color: #004A7C; /* Primary accent color */
 }
-
-.home-title {
-margin-bottom: 10px;
-font-size: 2rem;
-}
-
+  
 .home-description {
-margin-bottom: 20px;
+    margin-bottom: 20px;
+    color: #555;
 }
-
+  
 .home-articles {
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
 }
   

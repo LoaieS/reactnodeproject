@@ -10,9 +10,10 @@ function Home({ articles }) {
     <div className="home-container">
       <h2 className="home-title">Home Page</h2>
       <p className="home-description">
-        Welcome to the Sharanj Forum! This is the home page.
+        Welcome to the Sharanj Forum!<br/>Here are the latest posts
       </p>
-      
+
+
       <div className="home-articles">
         {articles.map((article) => (
           <ArticleCard
