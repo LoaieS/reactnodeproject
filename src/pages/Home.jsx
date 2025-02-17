@@ -52,9 +52,7 @@ function Home({ articles }) {
         {articles.map((article) => (
           <ArticleCard
             key={article.id}
-            title={article.title}
-            description={article.description}
-            image={article.image}
+            article={article}
             onClick={() => navigate(`/article/${article.id}`)}
           />
         ))}
