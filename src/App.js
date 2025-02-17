@@ -1,7 +1,7 @@
 // Loaie Shalloufi
 // Tareq Abu Yunis
 
-import React from 'react';
+import React, { useState } from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 import './styles/App.css';
@@ -13,6 +13,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import ArticleDetail from './pages/ArticleDetail';
+import CreateArticle from './pages/CreateArticle';
 
 /**
  * App Component
@@ -21,8 +22,7 @@ import ArticleDetail from './pages/ArticleDetail';
  * and includes the Navbar on every page.
  */
 function App() {
-  // Sample articles data
-  const articlesData = [
+    const [articles, setArticles] = useState([
     {
       id: 1,
       title: 'Roguelike Chess Tactics',
@@ -47,7 +47,14 @@ function App() {
                 hero builds and deck synergies to conquer the toughest dungeons...`,
       image: 'https://minireview.io/common/uploads/cache/review/1-900-506-219ba0cf99911662027337044c60dcdf.webp'
     }
-  ];
+  ]);
+
+  // Function to add a new article
+  const handleAddArticle = (newArticle) => {
+    // Generate a unique ID
+    const nextId = articles.length ? Math.max(...articles.map(a => a.id)) + 1 : 1;
+    setArticles((prev) => [...prev, { ...newArticle, id: nextId }]);
+  };
 
   return (
     <div className="App">
@@ -55,10 +62,11 @@ function App() {
         <Navbar />
         <div className="main-content">
           <Routes>
-            <Route path="/" element={<Home articles={articlesData} />} />
+            <Route path="/" element={<Home articles={articles} />} />
             <Route path="/about" element={<About />} />
             <Route path="/contact" element={<Contact />} />
-            <Route path="/article/:id" element={<ArticleDetail articles={articlesData} />} />
+            <Route path="/article/:id" element={<ArticleDetail articles={articles} />} />
+            <Route path="/new-article" element={<CreateArticle onAddArticle={handleAddArticle} />} />
           </Routes>
         </div>
         <Footer />

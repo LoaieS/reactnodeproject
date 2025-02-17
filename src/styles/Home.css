@@ -2,12 +2,13 @@
     text-align: center;
     max-width: 1200px;
     margin: 0 auto;
+    position: relative;
   }
   
   .home-title {
     margin-bottom: 10px;
     font-size: 2rem;
-    color: #004A7C; /* Primary accent color */
+    color: #004A7C;
 }
   
 .home-description {
@@ -20,5 +21,45 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 20px;
+}
+
+.notification {
+    position: fixed;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    animation: fade-in-out 3s forwards;
+    z-index: 9999;
+}
+  
+@keyframes fade-in-out {
+0% { opacity: 0; transform: translate(-50%, -20px); }
+10% { opacity: 1; transform: translate(-50%, 0); }
+80% { opacity: 1; transform: translate(-50%, 0); }
+100% { opacity: 0; transform: translate(-50%, -20px); }
+}
+
+.home-actions {
+margin-bottom: 20px;
+}
+
+.create-article-button {
+background-color: #004A7C;
+color: #fff;
+border: none;
+border-radius: 4px;
+padding: 10px 15px;
+font-size: 1rem;
+cursor: pointer;
+transition: background-color 0.2s ease;
+}
+
+.create-article-button:hover {
+background-color: #00345f;
 }
   
