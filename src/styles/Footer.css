@@ -3,10 +3,15 @@
     color: #fff;
     text-align: center;
     padding: 15px 0;
-  }
+    position: fixed; /* Always fixed at the bottom */
+    bottom: 0;
+    left: 0;
+    width: 100%;
+}
   
-  .footer-text {
+.footer-text {
     margin: 0;
     font-size: 0.9rem;
-  }
+}
+  
   

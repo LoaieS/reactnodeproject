@@ -7,5 +7,6 @@
 .main-content {
     flex: 1;
     padding: 20px;
+    padding-bottom: 80px; /* Add extra padding so content doesn't run into the fixed footer */
 }
   

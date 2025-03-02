@@ -1,52 +1,123 @@
 .article-notfound {
-    color: red;
+    color: #ff6b6b;
     text-align: center;
-    margin-top: 20px;
+    margin-top: 40px;
+    font-size: 1.2rem;
+    font-weight: 500;
   }
   
   .article-detail-container {
     max-width: 800px;
-    margin: 0 auto;
-    background-color: #fff;
-    border-radius: 6px;
-    padding: 20px 25px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin: 40px auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    margin-bottom: 80px;
   }
   
-  .article-detail-title {
-    margin-bottom: 20px;
-    font-size: 2rem;
-    color: #004A7C;
-  }
+    .article-detail-title {
+        margin-bottom: 25px;
+        font-size: 2.5rem;
+        color: #2c3e50;
+        font-weight: 700;
+        line-height: 1.2;
+        text-align: center;
+    }
   
   .article-detail-image {
     max-width: 100%;
-    max-height: 50vh;
+    max-height: 60vh;
     display: block;
-    margin-bottom: 10px;
-    border-radius: 6px;
+    margin: 0 auto 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
   
   .article-detail-noimage {
     font-style: italic;
-    margin-bottom: 10px;
-    color: #999;
+    margin-bottom: 20px;
+    color: #95a5a6;
+    text-align: center;
+    font-size: 1rem;
+  }
+  
+  /* A single-row layout for metadata items */
+  .article-metadata-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem; /* spacing between items */
+    margin-bottom: 25px;
+    justify-content: flex-start; /* or center, or space-around, etc. */
+  }
+  
+  .metadata-item {
+    font-size: 0.95rem;
+    color: #7f8c8d;
+  }
+  
+  /* Add a subtle bullet after each metadata item except the last */
+  .metadata-item::after {
+    content: "•";
+    margin: 0 0.5rem;
+    color: #ccc;
+  }
+  .metadata-item:last-of-type::after {
+    content: "";
   }
   
   .article-detail-content {
-    margin-bottom: 20px;
-    color: #555;
+    margin-bottom: 30px;
+    color: #2c3e50;
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
   }
   
+  /* Back to Home link */
   .article-detail-backlink {
     display: inline-block;
-    margin-top: 10px;
+    margin-top: 20px;
+    padding: 10px 20px;
     text-decoration: none;
-    color: #004A7C;
+    color: #ffffff;
+    background-color: #3498db;
+    border-radius: 6px;
     font-weight: 600;
+    transition: background-color 0.3s ease;
+    
   }
   
   .article-detail-backlink:hover {
-    text-decoration: underline;
+    background-color: #2980b9;
+    text-decoration: none;
+  }
+
+  /* Container for the two buttons */
+    .article-detail-actions {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    gap: 1rem;               /* Spacing between the buttons */
+    margin-top: 20px;
+  }
+  
+  /* Delete button */
+  .delete-article-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #e74c3c;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .delete-article-button:hover {
+    background-color: #c0392b;
   }
   
